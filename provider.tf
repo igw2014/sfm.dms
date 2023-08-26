@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "sfm-tf-state"
+    bucket         = "sfm-infra-state"
     key            = "dms-remote-backend/terraform.tfstate"
     region         = "us-east-1"
     encrypt        = true

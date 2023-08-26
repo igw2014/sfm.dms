@@ -35,7 +35,6 @@ user_kmdb = "kmdbadmin"
 pwd_kmdb = "kmdbadmin"
 start_replication_task = true
 replication_subnet_group_id = "sfm-dms-subnet-group-1"
-replication_instance_class = "dms.t3.medium"
 replication_instance_id = "sfm-dms-replication-instance-1"
 source_endpoint_id = "setupdb-source-endpoint-1"
 target_endpoint_id_1 = "pcdb-target-endpoint-1"

@@ -32,6 +32,8 @@ jobs:
     environment:
       name: int-test-env
     steps:
+      - uses: actions/checkout@v3
       - name: Terraform Apply
+        id:   apply
         run: |
           terraform apply -var-file="dev.tfvars" -auto-approve

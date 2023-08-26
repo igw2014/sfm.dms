@@ -66,10 +66,6 @@ variable "db_dms_sec_grp_id" {
  type = string
   default = "test"
 }
-variable "replication_instance_class" {
- type = string
-  default = "test"
-}
 variable "source_engine_name" {
  type = string
   default = "test"
@@ -195,7 +191,8 @@ variable "target_endpoint_id_2" {
   default = "test"
 }
 variable "source_db_name"{
-  type = stringdefault = "test"
+  type = string
+  default = "test"
 }
 variable "target_db_name_1" {
   type = string

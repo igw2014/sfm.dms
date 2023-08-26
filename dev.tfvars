@@ -23,7 +23,6 @@ db_server = "inv-qa-cluster-identifier.cluster-cefcmch6dncq.us-east-1.rds.amazon
 migration_type = "full-load-and-cdc"
 schema_name = "invmgmtqa"
 table_name = "%"
-server_name_target_endpoint = ""
 server_name_source_endpoint = "setupdb-instance-1.cefcmch6dncq.us-east-1.rds.amazonaws.com"
 user_source_endpoint = "setupdbadmin"
 pwd_source_endpoint = "setupdbadmin"

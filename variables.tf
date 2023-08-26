@@ -169,3 +169,47 @@ variable "replication_task_settings" {
   description = "An escaped JSON string that contains the task settings. See https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Tasks.CustomizingTasks.TaskSettings.html for more details"
   default     = null
 }
+variable "replication_subnet_group_id" {
+  type        = string
+  description = "Replication Subnet Group Id"
+  default = "test"
+}
+variable "replication_instance_class" {
+  type = string
+  default = "test"
+}
+variable "replication_instance_id" {
+  type = string
+  default = "test"
+}
+variable "source_endpoint_id" {
+  type = string
+  default = "test"
+}
+variable "target_endpoint_id_1" {
+  type = string
+  default = "test"
+}
+variable "target_endpoint_id_2" {
+  type = string
+  default = "test"
+}
+variable "source_db_name"{
+  type = stringdefault = "test"
+}
+variable "target_db_name_1" {
+  type = string
+  default = "test"
+}
+variable "target_db_name_2" {
+  type = string
+  default = "test"
+}
+variable "replication_task_id_1" {
+  type = string
+  default = "test"
+}
+variable "replication_task_id_2" {
+  type = string
+  default = "test"
+}

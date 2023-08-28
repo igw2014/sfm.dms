@@ -1,4 +1,4 @@
-name: Destroy Develop Env Infra
+name: Deploy QA Env Infra
 
 on:
   workflow_dispatch:
@@ -25,11 +25,12 @@ jobs:
         id:   plan
         run: |
           terraform init
-  destroy-dms:
+          terraform plan -var-file="qa.tfvars"
+  deploy-dms:
     runs-on: ubuntu-latest
     needs: prepare-env
     environment:
-      name: develop
+      name: qa
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -46,8 +47,8 @@ jobs:
         with:
           terraform_wrapper: false
           terraform_version: 1.4.6
-      - name: Terraform Destroy
-        id:   destroy
+      - name: Terraform Apply
+        id:   apply
         run: |
           terraform init
-          terraform destroy -var-file="develop.tfvars" -auto-approve
+          terraform apply -var-file="qa.tfvars" -auto-approve

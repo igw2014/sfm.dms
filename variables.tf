@@ -18,10 +18,6 @@ variable "engine_mode" {
  type = string
   default = "test"
 }
-variable "engine_version" {
- type = string
-  default = "test"
-}
 variable "master_username" {
  type = string
   default = "test"
@@ -35,10 +31,6 @@ variable "backup_retention_period" {
  default = "test"
 }
 variable "skip_final_snapshot" {
- type = string
-  default = "test"
-}
-variable "apply_immediately" {
  type = string
   default = "test"
 }

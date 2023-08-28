@@ -170,9 +170,9 @@
         "MemoryLimitTotal": 1024
     },
     "ChangeProcessingDdlHandlingPolicy": {
-        "HandleSourceTableDropped": true,
-        "HandleSourceTableTruncated": true,
-        "HandleSourceTableAltered": true
+        "HandleSourceTableDropped": false,
+        "HandleSourceTableTruncated": false,
+        "HandleSourceTableAltered": false
     },
     "PostProcessingRules": null
 }

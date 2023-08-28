@@ -7,13 +7,13 @@ resource "aws_dms_replication_subnet_group" "dms_subnet_group" {
 }
 
 resource "aws_dms_replication_instance" "dms_replication_instance" {
-  allocated_storage            = 50
-  apply_immediately            = true
-  auto_minor_version_upgrade   = true
-  multi_az                     = false
-  publicly_accessible          = false
+  allocated_storage            = var.allocated_storage
+  apply_immediately            = var.apply_immediately
+  auto_minor_version_upgrade   = var.auto_minor_version_upgrade
+  multi_az                     = var.multi_az
+  publicly_accessible          = var.publicly_accessible
   replication_instance_class   = var.replication_instance_class
-  engine_version               = "3.5.1"
+  engine_version               = var.engine_version
   replication_instance_id      = var.replication_instance_id
   replication_subnet_group_id  = aws_dms_replication_subnet_group.dms_subnet_group.id
   vpc_security_group_ids = [data.aws_security_group.aws_security_group.id]

@@ -210,3 +210,27 @@ variable "replication_task_id_2" {
   type = string
   default = "test"
 }
+variable "allocated_storage"{
+  type = number
+  default = 50
+}
+variable "apply_immediately"{
+  type = bool
+  default = false
+}
+variable "auto_minor_version_upgrade"{
+  type = bool
+  default = false
+}
+variable "multi_az" {
+  type = bool
+  default = false
+}
+variable "publicly_accessible" {
+  type = bool
+  default = false
+}
+variable "engine_version" {
+  type = string
+  default = "0.0.0"
+}

@@ -25,7 +25,6 @@ jobs:
         id:   plan
         run: |
           terraform init
-          terraform destroy -var-file="dev.tfvars"
   destroy-dms:
     runs-on: ubuntu-latest
     needs: prepare-env

@@ -1,3 +1,5 @@
+aws_vpc_id = "vpc-0d40cf14ef5b2f1c0"
+aws_security_group_id = "sg-0f41c75290552498f"
 migration_type = "full-load-and-cdc"
 server_name_source_endpoint = "setupdb-instance-1.cefcmch6dncq.us-east-1.rds.amazonaws.com"
 user_source_endpoint = "setupdbadmin"

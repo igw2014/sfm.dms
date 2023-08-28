@@ -27,3 +27,4 @@ auto_minor_version_upgrade = true
 multi_az = false
 publicly_accessible = false
 engine_version = "3.5.1"
+replication_instance_class = "dms.t3.medium"
